@@ -58,7 +58,7 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 							<td><input type="text" name="productCode[]" id="productCode_1" class="form-control" autocomplete="off" required></td>
 							<td><input type="text" name="productName[]" id="productName_1" class="form-control" autocomplete="off" required></td>
 							<td><input type="number" name="quantity[]" id="quantity_1" class="form-control quantity" autocomplete="off" required></td>
-							<td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off" ></td>
+							<td><input type="number" name="price[]" id="price_1" class="form-control price" autocomplete="off" required></td>
 							<td><input type="number" name="total[]" id="total_1" class="form-control total" autocomplete="off" ></td>
 						</tr>
 					</table>
