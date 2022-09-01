@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 31, 2022 at 07:13 PM
+-- Generation Time: Sep 01, 2022 at 12:14 PM
 -- Server version: 8.0.30-0ubuntu0.20.04.2
 -- PHP Version: 7.4.29
 
@@ -47,7 +47,8 @@ CREATE TABLE `invoice_order` (
 --
 
 INSERT INTO `invoice_order` (`order_id`, `user_id`, `order_date`, `order_receiver_name`, `order_receiver_address`, `order_total_before_tax`, `order_total_tax`, `order_tax_per`, `order_total_after_tax`, `order_amount_paid`, `order_total_amount_due`, `note`) VALUES
-(1, 123456, '2022-08-31 13:40:58', 'rtytr', 'rtyrty', '275.00', '13.75', '5', 288.75, '5.00', '283.75', 'rtyrty');
+(1, 123456, '2022-08-31 13:40:58', 'test', 'test', '275.00', '13.75', '5', 288.75, '5.00', '283.75', 'test'),
+(2, 123456, '2022-09-01 06:42:09', 'abc compnay', 'abc address', '2005.00', '60.15', '3', 2065.15, '3.00', '2062.15', 'test invoice');
 
 -- --------------------------------------------------------
 
@@ -70,7 +71,9 @@ CREATE TABLE `invoice_order_item` (
 --
 
 INSERT INTO `invoice_order_item` (`order_item_id`, `order_id`, `item_code`, `item_name`, `order_item_quantity`, `order_item_price`, `order_item_final_amount`) VALUES
-(1, 1, '1', 'dfgdfg', '5.00', '55.00', '275.00');
+(2, 1, '1', 'dfgdfg', '5.00', '55.00', '275.00'),
+(3, 2, '1', 'glass', '12.00', '20.00', '240.00'),
+(4, 2, '2', 'chappal', '5.00', '353.00', '1765.00');
 
 -- --------------------------------------------------------
 
@@ -125,13 +128,13 @@ ALTER TABLE `invoice_user`
 -- AUTO_INCREMENT for table `invoice_order`
 --
 ALTER TABLE `invoice_order`
-  MODIFY `order_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `order_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `invoice_order_item`
 --
 ALTER TABLE `invoice_order_item`
-  MODIFY `order_item_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `order_item_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `invoice_user`
