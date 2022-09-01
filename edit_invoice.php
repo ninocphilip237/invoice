@@ -1,4 +1,4 @@
-<?php
+type="float"<?php
 session_start();
 include('inc/header.php');
 include 'Invoice.php';
@@ -22,7 +22,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 	    	<div class="load-animate animated fadeInUp">
 		    	<div class="row">
 		    		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-		    			<h1 class="title">PHP Invoice System</h1>
+		    			<h1 class="title"> Invoice System</h1>
 						<?php include('menu.php');?>
 		    		</div>
 		    	</div>
@@ -85,7 +85,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 		      		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 		      			<h3>Notes: </h3>
 		      			<div class="form-group">
-							<textarea class="form-control txt" rows="5" name="notes" id="notes" placeholder="Your Notes" requiredF><?php echo $invoiceValues['note']; ?></textarea>
+							<textarea class="form-control txt" rows="5" name="notes" id="notes" placeholder="Your Notes" required><?php echo $invoiceValues['note']; ?></textarea>
 						</div>
 						<br>
 						<div class="form-group">
@@ -107,7 +107,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 							<div class="form-group">
 								<label>Tax Rate: &nbsp;</label>
 								<div class="input-group">
-									<input value="<?php echo $invoiceValues['order_tax_per']; ?>" type="number" class="form-control" name="taxRate" id="taxRate" placeholder="Tax Rate">
+									<input value="<?php echo $invoiceValues['order_tax_per']; ?>" type="float" class="form-control" name="taxRate" id="taxRate" placeholder="Tax Rate" required>
 									<div class="input-group-addon">%</div>
 								</div>
 							</div>
@@ -115,21 +115,21 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 								<label>Tax Amount: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_total_tax']; ?>" type="number" class="form-control" name="taxAmount" id="taxAmount" placeholder="Tax Amount">
+									<input value="<?php echo $invoiceValues['order_total_tax']; ?>" type="float" class="form-control" name="taxAmount" id="taxAmount" placeholder="Tax Amount">
 								</div>
 							</div>
 							<div class="form-group">
 								<label>Total: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_total_after_tax']; ?>" type="number" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total">
+									<input value="<?php echo $invoiceValues['order_total_after_tax']; ?>" type="float" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total">
 								</div>
 							</div>
 							<div class="form-group">
 								<label>Amount Paid: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_amount_paid']; ?>" type="number" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid">
+									<input value="<?php echo $invoiceValues['order_amount_paid']; ?>" type="float" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" required>
 								</div>
 							</div>
 							<div class="form-group">
