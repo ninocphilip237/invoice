@@ -89,13 +89,13 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 							<label>Subtotal: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="number" class="form-control" name="subTotal" id="subTotal" placeholder="Subtotal">
+								<input value="" type="float" class="form-control" name="subTotal" id="subTotal" placeholder="Subtotal">
 							</div>
 						</div>
 						<div class="form-group">
 							<label>Tax Rate: &nbsp;</label>
 							<div class="input-group">
-								<input value="" type="number" class="form-control" name="taxRate" id="taxRate" placeholder="Tax Rate">
+								<input value="" type="double" class="form-control" name="taxRate" id="taxRate" placeholder="Tax Rate" required>
 								<div class="input-group-addon">%</div>
 							</div>
 						</div>
@@ -103,28 +103,28 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 							<label>Tax Amount: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="number" class="form-control" name="taxAmount" id="taxAmount" placeholder="Tax Amount">
+								<input value="" type="float" class="form-control" name="taxAmount" id="taxAmount" placeholder="Tax Amount">
 							</div>
 						</div>
 						<div class="form-group">
 							<label>Total: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="number" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total">
+								<input value="" type="double" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total" >
 							</div>
 						</div>
 						<div class="form-group">
 							<label>Amount Paid: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="number" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid">
+								<input value="" type="double" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label>Amount Due: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="number" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
+								<input value="" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
 							</div>
 						</div>
 					</span>

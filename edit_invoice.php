@@ -85,7 +85,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 		      		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 		      			<h3>Notes: </h3>
 		      			<div class="form-group">
-							<textarea class="form-control txt" rows="5" name="notes" id="notes" placeholder="Your Notes" required><?php echo $invoiceValues['note']; ?></textarea>
+							<textarea class="form-control txt" rows="5" name="notes" id="notes" placeholder="Your Notes" requiredF><?php echo $invoiceValues['note']; ?></textarea>
 						</div>
 						<br>
 						<div class="form-group">
