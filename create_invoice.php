@@ -106,6 +106,15 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 								<input value="" type="float" class="form-control" name="taxAmount" id="taxAmount" placeholder="Tax Amount">
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label>Discount: &nbsp;</label>
+							<div class="input-group">
+								<input value="" type="double" class="form-control" name="discount" id="" placeholder="Discount">
+								<div class="input-group-addon">%</div>
+							</div>
+						</div>
+
 						<div class="form-group">
 							<label>Total: &nbsp;</label>
 							<div class="input-group">
