@@ -1,4 +1,4 @@
-# clone https://github.com/ninocphilip237/invoice.git
+#clone https://github.com/ninocphilip237/invoice.git
 
 #create database and give name as invoice_system
 
