@@ -119,32 +119,26 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 								</div>
 							</div>
 
+
 							<div class="form-group">
-								<label>Discount: &nbsp;</label>
-								<div class="input-group">
-									<input value="" type="double" class="form-control" name="discount" id="" placeholder="Discount">
-									<div class="input-group-addon">%</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label>Total: &nbsp;</label>
+								<label>Total with Tax: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
 									<input value="<?php echo $invoiceValues['order_total_after_tax']; ?>" type="float" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total">
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Amount Paid: &nbsp;</label>
+								<label>Discount Given: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_amount_paid']; ?>" type="float" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" required>
+									<input value="<?php echo $invoiceValues['order_amount_paid']; ?>" type="float" class="form-control" name="amountPaid" id="amountPaid" placeholder="Discount" required>
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Amount Due: &nbsp;</label>
+								<label>Total: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_total_amount_due']; ?>" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
+									<input value="<?php echo $invoiceValues['order_total_amount_due']; ?>" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="total">
 								</div>
 							</div>
 						</span>

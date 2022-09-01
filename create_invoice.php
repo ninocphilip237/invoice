@@ -107,33 +107,27 @@ if(!empty($_POST['companyName']) && $_POST['companyName']) {
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label>Discount: &nbsp;</label>
-							<div class="input-group">
-								<input value="" type="double" class="form-control" name="discount" id="" placeholder="Discount">
-								<div class="input-group-addon">%</div>
-							</div>
-						</div>
+
 
 						<div class="form-group">
-							<label>Total: &nbsp;</label>
+							<label>Total With Tax: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
 								<input value="" type="double" class="form-control" name="totalAftertax" id="totalAftertax" placeholder="Total" >
 							</div>
 						</div>
 						<div class="form-group">
-							<label>Amount Paid: &nbsp;</label>
+							<label>Discount Given: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="double" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" required>
+								<input value="" type="double" class="form-control" name="amountPaid" id="amountPaid" placeholder="Discount" required>
 							</div>
 						</div>
 						<div class="form-group">
-							<label>Amount Due: &nbsp;</label>
+							<label>Total: &nbsp;</label>
 							<div class="input-group">
 								<div class="input-group-addon currency">$</div>
-								<input value="" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
+								<input value="" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="total">
 							</div>
 						</div>
 					</span>
