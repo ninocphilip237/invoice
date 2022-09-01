@@ -101,7 +101,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 								<label>Subtotal: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_total_before_tax']; ?>" type="number" class="form-control" name="subTotal" id="subTotal" placeholder="Subtotal">
+									<input value="<?php echo $invoiceValues['order_total_before_tax']; ?>" type="float" class="form-control" name="subTotal" id="subTotal" placeholder="Subtotal">
 								</div>
 							</div>
 							<div class="form-group">
@@ -136,7 +136,7 @@ if(!empty($_GET['update_id']) && $_GET['update_id']) {
 								<label>Amount Due: &nbsp;</label>
 								<div class="input-group">
 									<div class="input-group-addon currency">$</div>
-									<input value="<?php echo $invoiceValues['order_total_amount_due']; ?>" type="number" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
+									<input value="<?php echo $invoiceValues['order_total_amount_due']; ?>" type="float" class="form-control" name="amountDue" id="amountDue" placeholder="Amount Due">
 								</div>
 							</div>
 						</span>
